@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Rizwan Honday Display</title>
+    <title>Our Services - Rizwan Honda Display</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>
-        <h1>Rizwan Honday Display</h1>
+        <h1>Rizwan Honda Display</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Our Services</a>
-            <a href="contact.html">Contact Us</a>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </nav>
     </header>
 
@@ -47,5 +50,12 @@
         <p>&copy; 2024 Honda Showroom. All rights reserved.</p>
         <p>Follow us on social media for updates and special offers!</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

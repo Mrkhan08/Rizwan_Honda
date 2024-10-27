@@ -10,10 +10,13 @@
     <header>
         <h1>Rizwan Honda Display</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Our Services</a>
-            <a href="contact.html">Contact Us</a>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </nav>
     </header>
 
@@ -56,5 +59,12 @@
     <footer>
         <p>&copy; 2024 Honda Showroom. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
