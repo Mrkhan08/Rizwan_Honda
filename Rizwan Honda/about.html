@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rizwan Honda Display</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Rizwan Honda Display</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2 class="animated-text">About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>At <strong>Rizwan Honda Showroom</strong>, we pride ourselves on being your trusted partner for all your Honda biking needs. From the latest models to classic favorites, we have a bike for every rider.</p>
+                <p class="highlight">Our mission is to provide not just a product, but an experience that lasts a lifetime.</p>
+                <p>With a passionate team of experts, we are here to ensure you get the best out of your Honda bike. From reliable repair services to genuine spare parts, your ride's performance is our top priority.</p>
+                <p>Join the thousands of satisfied riders who have chosen Rizwan Honda for their biking journey. Ride with confidence, ride with style!</p>
+            </div>
+            <div class="about-image">
+                <img src="asset/img6.jpg" alt="Honda Bike Showroom">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="our-values">
+        <h2>Our Core Values</h2>
+        <div class="values-list">
+            <div class="value">
+                <h3>Quality Assurance</h3>
+                <p>We only offer the best Honda products, ensuring you receive top-notch quality every time you visit.</p>
+            </div>
+            <div class="value">
+                <h3>Customer Satisfaction</h3>
+                <p>Your satisfaction is our priority. Our team is always ready to assist you with a smile.</p>
+            </div>
+            <div class="value">
+                <h3>Expert Services</h3>
+                <p>With certified technicians and genuine spare parts, your bike is always in safe hands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rizwan Honda Display. All rights reserved.</p>
+        <p>Follow us on social media for the latest updates and offers!</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

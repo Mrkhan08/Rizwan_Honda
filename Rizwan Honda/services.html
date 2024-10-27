@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Rizwan Honda Display</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Rizwan Honda Display</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services-section">
+        <h2 class="typing-animation">Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="asset/img7.jpg" alt="Showroom" class="service-img">
+                <h3>Showroom</h3>
+                <p>Explore the latest Honda models in our state-of-the-art showroom, where you can find both classic and modern bikes.</p>
+            </div>
+            <div class="service-card">
+                <img src="asset/img8.jpg" alt="Spare Parts" class="service-img">
+                <h3>Spare Parts</h3>
+                <p>Find genuine Honda spare parts and accessories for your bikes, ensuring longevity and optimal performance.</p>
+            </div>
+            <div class="service-card">
+                <img src="asset/img9.jpg" alt="Repair Services" class="service-img">
+                <h3>Repair Services</h3>
+                <p>Get expert repair and maintenance services to keep your bike in top shape, handled by certified technicians.</p>
+            </div>
+            <div class="service-card">
+                <img src="asset/img10.webp" alt="Customization" class="service-img">
+                <h3>Customization</h3>
+                <p>Personalize your Honda bike with our customization services, making your ride truly unique and stylish.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Honda Showroom. All rights reserved.</p>
+        <p>Follow us on social media for updates and special offers!</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

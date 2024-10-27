@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwan Honda Display - Home</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Rizwan Honda Display</h1>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h2>Welcome to Rizwan Honda Display</h2>
+            <p>Your trusted partner for the latest Honda bikes, spare parts, and expert repair services.</p>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Explore the Best Honda Bikes</h2>
+        <p>Your one-stop destination for the latest Honda bikes, genuine spare parts, and expert repair services.</p>
+        <p>We offer a wide range of models, from sports bikes to everyday commuters, and top-quality repair services to keep your ride smooth and safe.</p>
+    </section>
+
+    <!-- E-commerce Section -->
+    <section class="products">
+        <h2>Shop Our Bestsellers</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="asset/img11.jpg" alt="Honda Bike Model 1">
+                <h3>Honda CB 125F</h3>
+                <p class="price">$1,500</p>
+                <p class="description">Experience power and performance with the Honda CB 125F, designed for smooth rides and city commuting.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="asset/img12.jpg" alt="Honda Bike Model 2">
+                <h3>Honda CBR 150R</h3>
+                <p class="price">$2,300</p>
+                <p class="description">A perfect blend of sporty design and high performance, ideal for thrill seekers.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="asset/img13.jpg" alt="Honda Helmet">
+                <h3>Honda Helmet</h3>
+                <p class="price">$80</p>
+                <p class="description">Safety meets style with this lightweight, durable helmet for everyday protection.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rizwan Honda Display. All rights reserved.</p>
+        <p>Follow us on social media for the latest updates and offers!</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

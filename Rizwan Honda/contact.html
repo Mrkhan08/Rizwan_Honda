@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rizwan Honda Display</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Rizwan Honda Display</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2 class="typing-animation">Get in Touch with Us</h2>
+        <p class="animated-text1">Feel free to reach out for any inquiries or to learn more about our services. We're here to assist you!</p>
+
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Hamza Sajjad - Showroom Owner</p>
+                <p>Email: hamza@RizwanHondaDisplay.com</p>
+                <p>Phone: +92-300-1234567</p>
+                <p>WhatsApp: +92-300-7654321</p>
+                <div class="social-media">
+                    <a href="https://instagram.com/hamzasajjad_demo" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com/hamzasajjad_demo" target="_blank">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/hamzasajjad_demo" target="_blank">
+                        <img src="twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://wa.me/923007654321" target="_blank">
+                        <img src="whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Honda Showroom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
