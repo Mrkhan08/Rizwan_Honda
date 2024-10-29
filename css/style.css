@@ -684,22 +684,30 @@ footer p {
     font-size: 0.9em;
 }
 
+.active{
+    display: block;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        align-items: center;
         background-color: #000;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        padding: 10px 0;
+        /* border: 2px solid red; */
+
+        padding-block: 20%;
+        border-radius: 15%;
     }
 
-    .nav-links.active {
-        display: flex;
+    nav{
+        display: none;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-40%);        
+        width: 40%;
     }
 
     .menu-icon {

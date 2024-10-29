@@ -10,11 +10,6 @@
     <header>
         <h1>Rizwan Honda Display</h1>
         <nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="./html/about.html">About Us</a></li>
@@ -22,6 +17,11 @@
                 <li><a href="./html/contact.html">Contact Us</a></li>
             </ul>
         </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
     </header>
 
     <!-- Hero Banner Section -->
@@ -75,10 +75,10 @@
 
     <script>
         const mobileMenu = document.getElementById('mobile-menu');
-        const navLinks = document.getElementById('nav-links');
+        const nav = document.getElementsByTagName("nav")[0]
 
         mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            nav.classList.toggle('active');
         });
     </script>
 </body>
